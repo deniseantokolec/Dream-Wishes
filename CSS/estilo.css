@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: #CE93D8;
+}
+     
+section{
+    background-image: linear-gradient(to left top, #070707, #2b2b2c, #4e4e4f, #747476, #9c9d9f, #b1b2b5, #c6c9cb, #dcdfe2, #e1e6e9, #e6edef, #ecf4f5, #f2fbfa);
+
+    
+}
+.index{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+article{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration-color:black;
+    text-decoration-line: underline
+}
+h2{
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration-color:black;
+    text-decoration-line: underline;
+
+}
+h3{
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration-color:black;
+    text-decoration-line: underline;
+}
+.animation{
+    animation-name: aparecer;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    
+}
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.animation2{
+    animation-name: agrandar;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+@keyframes agrandar{
+    0%{
+        font-size: 15px;
+    }
+    50%{
+        font-size: 25px;
+    }
+    100%{
+        font-size: 32px;
+    }
+}
+p{
+    font-size: 25px;
+}
+.nosotros{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+    background-image: linear-gradient(to left top, #070707, #2b2b2c, #4e4e4f, #747476, #9c9d9f, #b1b2b5, #c6c9cb, #dcdfe2, #e1e6e9, #e6edef, #ecf4f5, #f2fbfa);
+
+}
+div{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+li{
+    font-size: 25px;
+    text-decoration-color:black;
+    list-style:disc;
+}
+ul li{
+    list-style: disc;
+}
+.qh{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+    background-image: linear-gradient(to left bottom, #070707, #2b2b2c, #4e4e4f, #747476, #9c9d9f, #b1b2b5, #c6c9cb, #dcdfe2, #e1e6e9, #e6edef, #ecf4f5, #f2fbfa);
+}
+.galeria{
+    height: auto;
+    width: 100%;
+}
+
+.img1{
+
+    width: 300px;
+    height: 300px;
+}
+.img2{
+
+    width: 300px;
+    height: 300px;
+}
+.img3{
+ 
+    width: 300px;
+    height: 300px;
+}
+.img4{
+
+    width: 300px;
+    height: 300px;
+}
+.img5{
+  
+    width: 300px;
+    height: 300px;
+}
+.img6{
+
+    width: 300px;
+    height: 300px;
+}
+.img7{
+
+    width: 300px;
+    height: 300px;
+}
+.img8{
+
+    width: 300px;
+    height: 300px;
+}
+.fotoyvideo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to left top, #070707, #2b2b2c, #4e4e4f, #747476, #9c9d9f, #b1b2b5, #c6c9cb, #dcdfe2, #e1e6e9, #e6edef, #ecf4f5, #f2fbfa);
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width:320px) and (max-width:374px){
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8,300px);
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    .img1{
+
+        width: 300px;
+        height: 300px;
+    }
+    .img2{
+        
+        width: 300px;
+        height: 300px;
+    }
+    .img3{
+        
+        width: 300px;
+        height: 300px;
+    }
+    .img4{
+        
+        width: 300px;
+        height: 300px;
+    }
+    .img5{
+          
+        width: 300px;
+        height: 300px;
+    }
+    .img6{
+        
+        width: 300px;
+        height: 300px;
+    }
+    .img7{
+        
+        width: 300px;
+        height: 300px;
+    }
+    .img8{
+        
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width:375px) and (max-width:424px){
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,200px);
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    .img1{
+
+        width: 150px;
+        height: 150px;
+    }
+    .img2{
+        
+        width: 150px;
+        height: 150px;
+    }
+    .img3{
+        
+        width: 150px;
+        height: 150px;
+    }
+    .img4{
+        
+        width: 150px;
+        height: 150px;
+    }
+    .img5{
+          
+        width: 150px;
+        height: 150px;
+    }
+    .img6{
+        
+        width: 150px;
+        height: 150px;
+    }
+    .img7{
+        
+        width: 150px;
+        height: 150px;
+    }
+    .img8{
+        
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media only screen and (min-width:425px) and (max-width:767px){
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,200px);
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    .img1{
+
+        width: 200px;
+        height: 200px;
+    }
+    .img2{
+        
+        width: 200px;
+        height: 200px;
+    }
+    .img3{
+        
+        width: 200px;
+        height: 200px;
+    }
+    .img4{
+        
+        width: 200px;
+        height: 200px;
+    }
+    .img5{
+          
+        width: 200px;
+        height: 200px;
+    }
+    .img6{
+        
+        width: 200px;
+        height: 200px;
+    }
+    .img7{
+        
+        width: 200px;
+        height: 200px;
+    }
+    .img8{
+        
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .galeria{
+        display: grid;
+        grid-template-areas: 
+        "item1 item2 item3 item4"
+        "item1 item2 item3 item4"
+        "item1 item2 item3 item4"
+        "item5 item6 item7 item8"
+        "item5 item6 item7 item8"
+        "item5 item6 item7 item8";
+        grid-template-rows: repeat(4,100px);
+        grid-gap: 10px;
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 0%;
+    
+    }
+    .img1{
+        grid-area: item1;
+
+    }
+    .img2{
+        grid-area: item2;
+
+    }
+    .img3{
+        grid-area: item3;
+
+    }
+    .img4{
+        grid-area: item4;
+
+    }
+    .img5{
+        grid-area: item5;
+
+    }
+    .img6{
+        grid-area: item6;
+  
+    }
+    .img7{
+        grid-area: item7;
+
+    }
+    .img8{
+        grid-area: item8;
+
+    }
+    
+}
+form{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contacto{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.btn{
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.presupuesto{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+
+}
+label{
+    font-weight: bold;
+    
+}
+.form-check-label{
+    font-weight: normal;
+}
+input{
+    font-size: 18px;
+}
+option{
+    font-size: 18px;
+}
+textarea{
+    font-size: 20px;
+}
