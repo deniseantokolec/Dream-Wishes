@@ -1,6 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+
+}
+*::selection{
+    color: white;
+    background-color: orchid;
+
 }
 
 .navbar{
@@ -12,7 +18,39 @@
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
     color: #CE93D8;
 }
-     
+.jumbotron{
+    height: 400px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    background-image: linear-gradient(to left bottom, #070707, #2b2b2c, #4e4e4f, #747476, #9c9d9f, #b1b2b5, #c6c9cb, #dcdfe2, #e1e6e9, #e6edef, #ecf4f5, #f2fbfa);
+}
+.slide{
+    object-position:bottom;
+    margin-top:0;
+}
+.lineas{
+    object-position: center;
+}
+.contenedor{
+    object-position: center;
+    margin-top: 0;
+    object-position: top;
+    width: auto;
+    padding-top: 0;
+    position: relative;
+    justify-content: flex-start;
+
+}
+.titulo{
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.descripcion{
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+  
 section{
     background-image: linear-gradient(to left top, #070707, #2b2b2c, #4e4e4f, #747476, #9c9d9f, #b1b2b5, #c6c9cb, #dcdfe2, #e1e6e9, #e6edef, #ecf4f5, #f2fbfa);
 
