@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +8,139 @@
     <link rel="stylesheet" href="./CSS/estilo.css">
     <link rel="shortcut icon" href="./Imagenes/Dream & Wishes.png" type="image/x-icon">
     <title>Contacto</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="../index.html">
+        <img src="./Imagenes/Dream & Wishes.png" width="80px" height="80px" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./quehacemos.html">Que hacemos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Contacto <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./presupuesto.html">Presupuesto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="contacto">
+      <h1>Contacto</h1>
+      <form class="needs-validation" novalidate>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationTooltip01">Nombre</label>
+            <input type="text" class="form-control" id="validationTooltip01" value="" required>
+            <div class="valid-tooltip">
+              Completo!
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationTooltip02">Apellido</label>
+            <input type="text" class="form-control" id="validationTooltip02" value="" required>
+            <div class="valid-tooltip">
+              Completo!
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationTooltip03">Ciudad</label>
+            <input type="text" class="form-control" id="validationTooltip03" required>
+            <div class="invalid-tooltip">
+              Ingresa una ciudad valida.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationTooltip04">Provincia</label>
+            <select class="custom-select" id="validationTooltip04" required>
+              <option selected disabled value="">Seleccionar...</option>
+              <option>Capital Federal</option>
+              <option>Buenos Aires</option>
+              <option>Catamarca</option>
+              <option>Corrientes</option>
+              <option>Chaco</option>
+              <option>Chubut</option>
+              <option>Córdoba</option>
+              <option>Entre Rios</option>
+              <option>Formosa</option>
+              <option>Jujuy</option>
+              <option>La Pampa</option>
+              <option>La Rioja</option>
+              <option>Mendoza</option>
+              <option>Misiones</option>
+              <option>Neuquén</option>
+              <option>Rio Negro</option>
+              <option>Salta</option>
+              <option>San Juan</option>
+              <option>San Luis</option>
+              <option>Santa Cruz</option>
+              <option>Santa Fe</option>
+              <option>Santiago del Estero </option>
+              <option>Tierra del Fuego</option>
+              <option>Tucumán</option>
+            </select>
+            <div class="invalid-tooltip">
+              Seleccionar una Provincia valida.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationTooltip05">Código Postal</label>
+            <input type="text" class="form-control" id="validationTooltip05" required>
+            <div class="invalid-tooltip">
+              Proporcionar un codigo postal valido.
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationTooltip01">Telefono</label>
+            <input type="number" class="form-control" id="validationTooltip01" value="" required>
+            <div class="valid-tooltip">
+              Completo!
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationTooltip02">E-mail</label>
+            <input type="email" class="form-control" id="validationTooltip02" value="@...." required>
+            <div class="valid-tooltip">
+              Completo!
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Describa razón de contacto</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </form>
+    </section>
+
+    <footer>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="../index.html">
-            <img src="./Imagenes/Dream & Wishes.png" width="80px" height="80px" alt="Logo">
+          <img src="./Imagenes/Dream & Wishes.png" width="80px" height="80px" alt="Logo">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-Nav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbar-Nav">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="../index.html">Inicio</a>
@@ -32,140 +155,18 @@
               <a class="nav-link" href="./galeria.html">Galeria</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Contacto <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Contacto <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./presupuesto.html">Presupuesto</a>
+              <a class="nav-link" href="./presupuesto.html">Presupuesto</a>
             </li>
           </ul>
         </div>
       </nav>
-      <section class="contacto">
-        <h1>Contacto</h1>
-        <form class="needs-validation" novalidate>
-          <div class="form-row">
-            <div class="col-md-6 mb-3">
-              <label for="validationTooltip01">Nombre</label>
-              <input type="text" class="form-control" id="validationTooltip01" value="" required>
-              <div class="valid-tooltip">
-                Completo!
-              </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="validationTooltip02">Apellido</label>
-              <input type="text" class="form-control" id="validationTooltip02" value="" required>
-              <div class="valid-tooltip">
-                Completo!
-              </div>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="col-md-6 mb-3">
-              <label for="validationTooltip03">Ciudad</label>
-              <input type="text" class="form-control" id="validationTooltip03" required>
-              <div class="invalid-tooltip">
-                Ingresa una ciudad valida.
-              </div>
-            </div>
-            <div class="col-md-3 mb-3">
-              <label for="validationTooltip04">Provincia</label>
-              <select class="custom-select" id="validationTooltip04" required>
-                <option selected disabled value="">Seleccionar...</option>
-                <option>Capital Federal</option>
-                <option>Buenos Aires</option>
-                <option>Catamarca</option>
-                <option>Corrientes</option>
-                <option>Chaco</option>
-                <option>Chubut</option>
-                <option>Córdoba</option>
-                <option>Entre Rios</option>
-                <option>Formosa</option>
-                <option>Jujuy</option>
-                <option>La Pampa</option>
-                <option>La Rioja</option>
-                <option>Mendoza</option>
-                <option>Misiones</option>
-                <option>Neuquén</option>
-                <option>Rio Negro</option>
-                <option>Salta</option>
-                <option>San Juan</option>
-                <option>San Luis</option>
-                <option>Santa Cruz</option>
-                <option>Santa Fe</option>
-                <option>Santiago del Estero </option>
-                <option>Tierra del Fuego</option>              
-                <option>Tucumán</option>
-              </select>
-              <div class="invalid-tooltip">
-                Seleccionar una Provincia valida.
-              </div>
-            </div>
-            <div class="col-md-3 mb-3">
-              <label for="validationTooltip05">Código Postal</label>
-              <input type="text" class="form-control" id="validationTooltip05" required>
-              <div class="invalid-tooltip">
-                Proporcionar un codigo postal valido.
-              </div>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="col-md-6 mb-3">
-              <label for="validationTooltip01">Telefono</label>
-              <input type="number" class="form-control" id="validationTooltip01" value="" required>
-              <div class="valid-tooltip">
-                Completo!
-              </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="validationTooltip02">E-mail</label>
-              <input type="email" class="form-control" id="validationTooltip02" value="@...." required>
-              <div class="valid-tooltip">
-                Completo!
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Describa razón de contacto</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
-          </div>
-          <button class="btn btn-primary" type="submit">Submit form</button>
-        </form>
-      </section>
-      <footer>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="../index.html">
-              <img src="./Imagenes/Dream & Wishes.png" width="80px" height="80px" alt="Logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-Nav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar-Nav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./quehacemos.html">Que hacemos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./galeria.html">Galeria</a>
-              </li>
-              <li class="nav-item active">
-                  <a class="nav-link" href="#">Contacto <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="./presupuesto.html">Presupuesto</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </footer>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
