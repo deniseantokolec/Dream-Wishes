@@ -1,0 +1,497 @@
+*{
+    margin:0;
+    padding:0;
+}
+*::selection{
+    color: white;
+    background-color: orchid;
+
+}
+
+//paleta de colores inicio
+
+$color1:#CE93D8;
+
+$color2:#ff00;
+
+$backgrouncolor1:linear-gradient(to left bottom, #070707, #2b2b2c, #4e4e4f, #747476, #9c9d9f, #b1b2b5, #c6c9cb, #dcdfe2, #e1e6e9, #e6edef, #ecf4f5, #f2fbfa);
+
+$backgroundcolor2:linear-gradient(to left top, #070707, #2b2b2c, #4e4e4f, #747476, #9c9d9f, #b1b2b5, #c6c9cb, #dcdfe2, #e1e6e9, #e6edef, #ecf4f5, #f2fbfa);
+
+
+//paleta de colores fin
+
+//tipografia inicio
+
+$fuente:Georgia, 'Times New Roman', Times, serif;
+
+$tamano1:14px;
+
+$tamano2:15px;
+
+$tamano3:18px;
+
+$tamano4:20px;
+
+$tamano5:25px;
+
+$tamano6:32px;
+
+$tamano7:40px;
+
+$fontweight:bold;
+
+$fontweight2:normal;
+
+$fontstyle:italic;
+
+$textdecoration1:underline;
+
+$textdecoration2:none;
+
+//tipografia fin
+
+/*inicio navbar*/
+.navbar{
+    font-size:$tamano1;
+    font-family:$fuente;
+
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: $color1;
+}
+/*fin navbar*/
+
+/*inicio jumbotron*/
+.jumbotron{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    background-image: $backgrouncolor1;
+    object-fit: scale-down;
+
+    img{
+        object-fit: scale-down;
+    }
+}
+.slide{
+    object-position:bottom;
+    margin-top:0;
+}
+.lineas{
+    object-position: center;
+}
+.contenedor{
+    object-position: center;
+    margin-top: 0;
+    object-position: top;
+    width: auto;
+    padding-top: 0;
+    position: relative;
+    justify-content: flex-start;
+
+}
+/*fin jumbotron*/
+
+/*inicio argumentos*/
+.titulo{
+    font-size: $tamano3;
+    font-family: $fuente;
+}
+.descripcion{
+    font-size: $tamano1;
+    font-family: $fuente;
+}
+  
+section{
+    background-image: $backgroundcolor2;
+
+    
+}
+.index{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+article{
+    font-family: $fuente;
+
+}
+h1{
+    font-size: $tamano7;
+    font-weight: $fontweight;
+    font-style: $fontstyle;
+    text-decoration-color:$color2;
+    text-decoration-line: $textdecoration1;
+}
+h2{
+    font-size: $tamano7;
+    font-weight: $fontweight;
+    font-style: $fontstyle;
+    text-decoration-color:$color2;
+    text-decoration-line: $textdecoration1;
+
+}
+h3{
+    font-size: $tamano6;
+    font-weight: $fontweight;
+    text-decoration-color:$color2;
+    text-decoration-line: $textdecoration1;
+}
+.animation{
+    animation-name: aparecer;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    
+}
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.animation2{
+    animation-name: agrandar;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+@keyframes agrandar{
+    0%{
+        font-size: $tamano1;
+    }
+    50%{
+        font-size: $tamano5;
+    }
+    100%{
+        font-size: $tamano6;
+    }
+}
+p{
+    font-size: $tamano5;
+}
+.nosotros{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+    background-image: $backgroundcolor2;
+
+}
+div{
+    font-family: $fuente;
+}
+li{
+    font-size: $tamano5;
+    text-decoration-color:$color2;
+    list-style:disc;
+}
+ul li{
+    list-style: disc;
+}
+.qh{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+    background-image: $backgrouncolor1;
+}
+.galeria{
+    height: auto;
+    width: 100%;
+}
+.galeria{
+    @for $in from 1 to 9 {
+        .bucle-#{$in} {
+            animation-name: secuencia;
+            animation-duration: 2s*$in;
+            animation-iteration-count: 2;
+        }
+        @keyframes secuencia {
+            0%{
+                opacity:0;
+            }
+            50%{
+                opacity:0.5;
+            }
+            100%{
+                opacity:1;
+            }  
+        }
+    
+    }
+}
+
+@mixin size{
+    width: 300px;
+    height: 300px;
+}
+.img1{
+
+    @include size;
+}
+.img2{
+
+    @include size;
+}
+.img3{
+ 
+    @include size;
+}
+.img4{
+
+    @include size;
+}
+.img5{
+  
+    @include size;
+}
+.img6{
+
+    @include size;
+}
+.img7{
+
+    @include size;
+}
+.img8{
+
+    @include size;
+}
+.fotoyvideo{
+    font-family: $fuente;
+    background-image: $backgroundcolor2;
+    width: 100%;
+    height: auto;
+}
+
+/*fin argumentos*/
+
+/*inicio media queries*/
+@media only screen and (min-width:320px) and (max-width:374px){
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8,300px);
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    .img1{
+
+        @include size;
+    }
+    .img2{
+        
+        @include size;
+    }
+    .img3{
+        
+        @include size;
+    }
+    .img4{
+        
+        @include size;
+    }
+    .img5{
+        
+        @include size;
+    }
+    .img6{
+        
+        @include size;
+    }
+    .img7{
+        
+        @include size;
+    }
+    .img8{
+        
+        @include size;
+    }
+}
+
+@mixin size2 {
+    width: 150px;
+    height: 150px;
+}
+
+@media only screen and (min-width:375px) and (max-width:424px){
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,200px);
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    .img1{
+
+        @include size2;
+    }
+    .img2{
+        
+        @include size2;
+    }
+    .img3{
+        
+        @include size2;
+    }
+    .img4{
+        
+        @include size2;
+    }
+    .img5{
+          
+        @include size2;
+    }
+    .img6{
+        @include size2;
+    }
+    .img7{
+        
+        @include size2;
+    }
+    .img8{
+        
+        @include size2;
+    }
+}
+
+@mixin size3 {
+    width: 200px;
+    height: 200px;
+}
+
+@media only screen and (min-width:425px) and (max-width:767px){
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,200px);
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    .img1{
+
+        @include size3;
+    }
+    .img2{
+        
+        @include size3;
+    }
+    .img3{
+        
+        @include size3;
+    }
+    .img4{
+        
+        @include size3;
+    }
+    .img5{
+          
+        @include size3;
+    }
+    .img6{
+        
+        @include size3;
+    }
+    .img7{
+        
+        @include size3;
+    }
+    .img8{
+        
+        @include size3;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .galeria{
+        display: grid;
+        grid-template-areas: 
+        "item1 item2 item3 item4"
+        "item1 item2 item3 item4"
+        "item1 item2 item3 item4"
+        "item5 item6 item7 item8"
+        "item5 item6 item7 item8"
+        "item5 item6 item7 item8";
+        grid-template-rows: repeat(4,100px);
+        grid-gap: 10px;
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 0%;
+    
+    }
+    .img1{
+        grid-area: item1;
+
+    }
+    .img2{
+        grid-area: item2;
+
+    }
+    .img3{
+        grid-area: item3;
+
+    }
+    .img4{
+        grid-area: item4;
+
+    }
+    .img5{
+        grid-area: item5;
+
+    }
+    .img6{
+        grid-area: item6;
+  
+    }
+    .img7{
+        grid-area: item7;
+
+    }
+    .img8{
+        grid-area: item8;
+
+    }
+    
+}
+/*fin media queries*/
+
+/*inicio formularios*/
+form{
+    font-family: $fuente;
+}
+.contacto{
+    font-family: $fuente;
+    font-size: $tamano5;
+}
+.btn{
+    font-size: $tamano5;
+    font-family: $fuente;
+}
+.presupuesto{
+    font-family: $fuente;
+    font-size: $tamano5;
+
+}
+label{
+    font-weight: $fontweight;
+    
+}
+.cp{
+    font-size: $tamano4;
+}
+.form-check-label{
+    font-weight: $fontweight2;
+}
+input{
+    font-size: $tamano3;
+}
+option{
+    font-size: $tamano3;
+}
+textarea{
+    font-size: $tamano4;
+}
+/*fin formularios*/
