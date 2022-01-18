@@ -418,6 +418,9 @@ label{
     font-weight: bold;
     
 }
+.cp{
+    font-size: 20px;
+}
 .form-check-label{
     font-weight: normal;
 }
