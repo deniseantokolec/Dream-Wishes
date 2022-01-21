@@ -500,7 +500,8 @@ label{
 }
 .CPA{
     text-decoration-color: $color2;
-    text-decoration: $color2;
+    border: $color2;
+    
     .CPA:hover{
         color: $color1;
     }
