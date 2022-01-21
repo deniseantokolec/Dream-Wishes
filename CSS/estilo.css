@@ -588,8 +588,7 @@ label {
   text-decoration-color: #ff00;
   color: #ff00;
 }
-
-.CPA:hover {
+.CPA .CPA:hover {
   color: #CE93D8;
 }
 

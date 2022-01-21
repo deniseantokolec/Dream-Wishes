@@ -501,10 +501,11 @@ label{
 .CPA{
     text-decoration-color: $color2;
     color: $color2;
+    .CPA:hover{
+        color: $color1;
+    }
 }
-.CPA:hover{
-    color: $color1;
-}
+
 .textarea{
     font-size: $tamano4;
 }
