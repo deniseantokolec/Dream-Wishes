@@ -170,6 +170,7 @@ ul li {
 }
 
 .galeria {
+  padding: 10px;
   height: auto;
   width: 100%;
 }
