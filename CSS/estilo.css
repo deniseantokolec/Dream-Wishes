@@ -576,15 +576,23 @@ label {
   font-weight: normal;
 }
 
-input {
+.input {
   font-size: 18px;
 }
 
-option {
+.option {
   font-size: 18px;
 }
 
-textarea {
+.CPA {
+  color: #ff00;
+}
+
+.CPA:hover {
+  color: #CE93D8;
+}
+
+.textarea {
   font-size: 20px;
 }
 

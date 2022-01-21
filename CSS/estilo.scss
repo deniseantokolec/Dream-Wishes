@@ -492,13 +492,19 @@ label{
 .form-check-label{
     font-weight: $fontweight2;
 }
-input{
+.input{
     font-size: $tamano3;
 }
-option{
+.option{
     font-size: $tamano3;
 }
-textarea{
+.CPA{
+    color: $color2;
+}
+.CPA:hover{
+    color: $color1;
+}
+.textarea{
     font-size: $tamano4;
 }
 /*fin formularios*/
