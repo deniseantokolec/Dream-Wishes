@@ -186,7 +186,7 @@ p{
     display:grid;
     grid-template-columns: repeat(1,1fr);
     width: 100%;
-    background-image: $backgroundcolor2;
+    background-image: $backgroundcolor1;
 
 }
 div{
@@ -205,7 +205,7 @@ ul li{
     display:grid;
     grid-template-columns: repeat(1,1fr);
     width: 100%;
-    background-image: $backgroundcolor2;
+    background-image: $backgroundcolor1;
 }
 .galeria{
     height: auto;
@@ -272,7 +272,7 @@ ul li{
 }
 .fotoyvideo{
     font-family: $fuente;
-    background-image: $backgroundcolor2;
+    background-image: $backgroundcolor1;
     width: 100%;
     height: auto;
 }
@@ -475,6 +475,7 @@ form{
 .contacto{
     font-family: $fuente;
     font-size: $tamano5;
+    background-image: $backgroundcolor2;
 }
 .btn{
     font-size: $tamano5;
@@ -488,6 +489,7 @@ form{
 .presupuesto{
     font-family: $fuente;
     font-size: $tamano5;
+    background-image: $backgroundcolor2;
 
 }
 label{
