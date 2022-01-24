@@ -16,6 +16,10 @@
 .navbar .navbar-nav .nav-item {
   list-style-type: none;
 }
+.navbar .fab {
+  font-size: 25px;
+  color: #f2fbfa;
+}
 
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
   color: #CE93D8;
