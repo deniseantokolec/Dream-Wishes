@@ -237,8 +237,8 @@ ul li{
 }
 
 @mixin size{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
 }
 .img1{
 
@@ -325,8 +325,8 @@ ul li{
 }
 
 @mixin size2 {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 @media only screen and (min-width:375px) and (max-width:424px){
