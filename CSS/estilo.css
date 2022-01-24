@@ -547,7 +547,7 @@ ul li {
 form {
   font-family: Georgia, "Times New Roman", Times, serif;
   padding: 10px;
-  background-image: linear-gradient(to right top, #eedce7, #eecee5, #ecc0e5, #e7b3e7, #dfa6ea, #cc97d9, #b988c9, #a779b9, #886492, #69516e, #4b3e4c, #2d2c2d);
+  background-image: linear-gradient(to left bottom, #eedce7, #eecee5, #ecc0e5, #e7b3e7, #dfa6ea, #cc97d9, #b988c9, #a779b9, #886492, #69516e, #4b3e4c, #2d2c2d);
 }
 
 .contacto {
