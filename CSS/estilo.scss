@@ -120,9 +120,11 @@ section{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
+.indexdiv{
+    background-image: $backgroundcolor1;
+}
 article{
-    font-family: $fuente;
-    background-image: $backgroundcolor1;   
+    font-family: $fuente; 
 
 }
 h1{
