@@ -207,12 +207,8 @@ ul li{
     background-image: $backgrouncolor1;
 }
 .galeria{
-    padding: 0px;
-    margin-left: 2px;
-    margin-right: 2px;
-    margin-bottom: 10px;
     height: auto;
-    width: 80%;
+    width: 100%;
 }
 .galeria{
     @for $in from 1 to 9 {

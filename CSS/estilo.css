@@ -170,12 +170,8 @@ ul li {
 }
 
 .galeria {
-  padding: 0px;
-  margin-left: 2px;
-  margin-right: 2px;
-  margin-bottom: 10px;
   height: auto;
-  width: 80%;
+  width: 100%;
 }
 
 .galeria .bucle-1 {
