@@ -284,7 +284,7 @@ ul li{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8,300px);
         grid-gap: 10px;
-        padding: 10px;
+        padding: 5px;
     }
     .img1{
 
@@ -331,7 +331,7 @@ ul li{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4,200px);
         grid-gap: 10px;
-        padding: 10px;
+        padding: 5px;
     }
     .img1{
 
@@ -377,7 +377,7 @@ ul li{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4,200px);
         grid-gap: 10px;
-        padding: 10px;
+        padding: 5px;
     }
     .img1{
 
@@ -425,10 +425,9 @@ ul li{
         "item5 item6 item7 item8";
         grid-template-rows: repeat(4,100px);
         grid-gap: 10px;
-        padding: 10px;
+        padding: 5px;
         margin-top: 20px;
-        margin-left: 0%;
-    
+       
     }
     .img1{
         grid-area: item1;
