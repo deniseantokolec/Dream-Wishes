@@ -171,11 +171,11 @@ ul li {
 
 .galeria {
   padding: 0px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
   margin-bottom: 10px;
   height: auto;
-  width: 100%;
+  width: 80%;
 }
 
 .galeria .bucle-1 {
